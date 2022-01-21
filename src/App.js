@@ -1,6 +1,7 @@
 import React from 'react';
 import Content from './Component/Content';
 import Navbar from "./Component/Navbar";
+import Footer from './Component/Footer';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className='mx-40'>
       <Navbar/>
       <Content/>
+      <Footer/>
     </div>
       </>
     
