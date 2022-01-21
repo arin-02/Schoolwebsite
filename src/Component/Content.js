@@ -2,7 +2,7 @@ import React from "react";
 import lin from './lin.png'
 import fac from './fac.png'
 import twi from './twi.png'
-import call from './call.png'
+
 export default function Content() {
 
   return (
