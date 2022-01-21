@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.welcome-card {
+    box-shadow: 0 0 2px 2px #6e849699;
+    transition: box-shadow 400ms;
+}
+
+.welcome-card:hover {
+    box-shadow: 0 0 7px 7px #6e849699;
+}
