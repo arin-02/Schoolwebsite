@@ -25,3 +25,6 @@
   width: 2rem;
     transition: all .4s ease-in-out;
 }
+.content1:hover{
+  text-decoration-color: #f37335;
+}

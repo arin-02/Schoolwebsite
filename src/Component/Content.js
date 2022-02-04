@@ -3,24 +3,30 @@ import { TiSocialLinkedinCircular,TiSocialTwitterCircular } from "react-icons/ti
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
 import {Link} from 'react-scroll'
-
+import {Link as Lnk} from 'react-router-dom';
 
 export default function Content() {
 
   return (
   <div className="flex justify-between mt-4"> 
         <div className="first flex text-xl font-semibold">
-          <ul className="  decoration-none hidden lg:flex gap-x-4 lg:gap-x-6" style={{color:"#135e9e"}}>
-                <li className="cursor-pointer hover:underline hover:decoration-red-700">HOME</li>
+          <ul className=" contenthead decoration-none hidden lg:flex gap-x-4 lg:gap-x-6" style={{color:"#135e9e"}}>
+                <Lnk to={'/'}><li className="content1 cursor-pointer hover:underline ">HOME</li>
+                </Lnk>
                 
-                <li className="cursor-pointer hover:underline hover:decoration-red-700">
+                <Lnk to={'/aboutus'}> <li className="content1 cursor-pointer hover:underline ">ABOUT US</li>
+                </Lnk>
+
+                <Lnk to={'/classes'}><li className="content1 cursor-pointer hover:underline ">
                 CLASSES
 
                 </li>
-                <li className="cursor-pointer hover:underline hover:decoration-red-700" ><Link className="cursor-pointer" to="allteachers" smooth={true} duration={700}> TEACHERS</Link></li>
-                <li className="cursor-pointer hover:underline hover:decoration-red-700">EVENTS</li>
+                </Lnk>
+                <Lnk to={'/teachers'}><li className="content1 cursor-pointer hover:underline " > TEACHERS</li>
+                </Lnk>
                 
-                <li className="cursor-pointer hover:underline hover:decoration-red-700">CONTACTS</li>
+                
+                <li className="content1 cursor-pointer hover:underline ">CONTACTS</li>
             </ul>
         </div>
    
