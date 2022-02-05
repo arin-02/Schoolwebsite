@@ -15,7 +15,7 @@ function Teacherinside() {
           TEACHERS
           </div>
           </div>
-          <div className="allteach grid grid-cols-4">
+          <div className="allteach grid place-content-center  grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
             <Teachersingle number="img5"/>
             <Teachersingle number="img6"/>
             <Teachersingle number="img7"/>

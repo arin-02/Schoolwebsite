@@ -3,7 +3,7 @@ import { IoIosCall } from "react-icons/io";
 import { AiFillClockCircle } from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import { FiCalendar} from 'react-icons/fi'
-import Abovefooter from "./Abovefooter";
+import {Link as Lnk} from 'react-router-dom'
 
 
 export default function Footer() {
@@ -99,18 +99,17 @@ export default function Footer() {
 </div>
 
         </div>
-        <div className="Quicklinks margin mx-10 lg:mx-8 w-52  ">
+        <div className="Quicklinks margin  lg:mx-8 w-52 mx-6 ">
           <div>
             <h2 className="text-xl font-bold">Quick Links</h2>
-            <ul className="links font-medium mt-10" style={{color:"#135e9e"}}>
-              <li className=" ll my-2 mt-6">
-              <a href="">- About US</a>
-             
-              </li>
-              <li className="ll my-2"><a href="">- Our Classes</a></li>
-              <li className="ll my-2"><a href="">-  Teachers</a></li>
-              <li className="ll my-2"><a href="">- Recent Events</a></li>
-              <li className="ll my-2"><a href="">- Our News</a></li>
+            <ul className="links font-medium mt-10 w-28" style={{color:"#135e9e"}}>
+            <Lnk to={'/'}><li className=" ll my-2 mt-6 w-28">
+              <a href="">-Home</a>
+              </li> </Lnk>
+              <Lnk to={'/aboutus'}><li className="ll my-2"><a href="">-About</a></li></Lnk>
+              <Lnk to={'/classes'}><li className="ll my-2"><a href="">-Classes</a></li></Lnk>
+              <Lnk to={'/teachers'}><li className="ll my-2"><a href="">-Teacher</a></li></Lnk>
+              <Lnk to={'/contacts'}><li className="ll my-2"><a href="">-Contact</a></li></Lnk>
             </ul>
           </div>
         </div>

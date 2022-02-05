@@ -14,7 +14,7 @@ export default function Content() {
                 <Lnk to={'/'}><li className="content1 cursor-pointer hover:underline ">HOME</li>
                 </Lnk>
                 
-                <Lnk to={'/aboutus'}> <li className="content1 cursor-pointer hover:underline ">ABOUT US</li>
+                <Lnk to={'/aboutus'}> <li className="content1 cursor-pointer hover:underline ">ABOUT</li>
                 </Lnk>
 
                 <Lnk to={'/classes'}><li className="content1 cursor-pointer hover:underline ">
@@ -26,7 +26,8 @@ export default function Content() {
                 </Lnk>
                 
                 
-                <li className="content1 cursor-pointer hover:underline ">CONTACTS</li>
+                <Lnk to={'/contacts'}><li className="content1 cursor-pointer hover:underline ">CONTACTS</li>
+                </Lnk>
             </ul>
         </div>
    
@@ -59,7 +60,8 @@ export default function Content() {
     <hr/>
     </div>
     <ul className="font-medium" style={{color:"#ff5707"}}>
-      <li className=" mt-3 text-2xl cursor-pointer">Home</li>
+      <Lnk to={'/'}><li className=" mt-3 text-2xl cursor-pointer">Home</li></Lnk>
+      <Lnk to={'/aboutus'}><li className=" mt-3 text-2xl cursor-pointer">About-Us</li></Lnk>
       <li className="mt-3">
       <div className="dropdown mt-3">
       <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" style={{backgroundColor:"#ff5707"}}
@@ -67,15 +69,15 @@ export default function Content() {
         Dropdown button
       </button>
       <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton">
-        <li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">9th Class</a></li>
-        <li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">10th Class</a></li>
-        <li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">12th Class</a></li>
+        <Lnk to={'/classes'}><li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">9th Class</a></li></Lnk>
+        <Lnk to={'/classes'}><li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">10th Class</a></li></Lnk>
+        <Lnk to={'/classes'}><li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">12th Class</a></li></Lnk>
       </ul>
     </div>
       </li>
-      <li className="mt-3 text-2xl cursor-pointer">Teachers</li>
-      <li className="mt-3 text-2xl cursor-pointer">Events</li>
-      <li className="mt-3 text-2xl cursor-pointer">Contacts</li>
+      <Lnk to={'/teachers'}><li className="mt-3 text-2xl cursor-pointer">Teachers</li></Lnk>
+      
+      <Lnk to={'/contacts'}><li className="mt-3 text-2xl cursor-pointer">Contacts</li></Lnk>
     </ul>
     
   </div>

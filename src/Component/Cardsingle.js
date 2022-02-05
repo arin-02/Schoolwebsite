@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Cardsingle(props) {
-  return  <div className="col-lg-4 w-80 my-4">
+  return  <div className="col-lg-4 w-full sm:w-72 my-4">
   <div className="card">
     <img
       src={`	https://shelly.merku.love/wp-content/uploads/2020/11/class${props.num}-270x180.png`}
