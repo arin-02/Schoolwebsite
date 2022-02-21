@@ -7,12 +7,12 @@ import { HiLocationMarker } from "react-icons/hi";
 
 function Navbar() {
   return <div>
-  <div className="start flex  pt-12 font-medium gap-x-2 lg:gap-x-10 xl:gap-x-52" >
+  <div className="start flex  pt-3 font-medium gap-x-2 lg:gap-x-10 xl:gap-x-52" >
   <div className="lefty pl-32 sm:pl-80 md:pl-0 text-xl flex  md:hidden lg:flex">
       <div className="imgg w-16 ">
       <img src={projectimg} alt="image" />
       </div>
-      <div className="schooltext  " style={{color:"#ff5707"}}>
+      <div className="schooltext grid place-content-center " style={{color:"#ff5707"}}>
         SCHOOL
       </div>
       </div>
